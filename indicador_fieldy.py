@@ -3,7 +3,7 @@ from openpyxl import load_workbook
 
 try:
     # Loading do arquivo .csv em um DataFrame
-    df_power_bi = pd.read_csv(r'C:\Users\bruno.ribeiro\Desktop\Task Sprint 26 - Fieldy\Fieldy.csv')
+    df_power_bi = pd.read_csv(r'C:\Users\bruno.ribeiro\Desktop\Task Sprint Fieldy\Fieldy.csv')
 
     # Divisão das colunas "Estimativa original" e "Estimativa de trabalho restante" por 3600, pois no arquivo .csv os números são dados em segundos
     df_power_bi['Estimativa original'] = df_power_bi['Estimativa original'] / 3600
