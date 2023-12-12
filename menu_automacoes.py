@@ -40,7 +40,8 @@ file_menu.add_command(label="Sair", command=window.quit)
 
 # Obtenha a lista de arquivos .py no diretório atual
 current_directory = os.getcwd()
-script_files = [f for f in os.listdir(current_directory) if f.endswith(".py") & f.startswith("indicador")]
+script_files = [f for f in os.listdir(current_directory) if f.endswith(".py") and f.startswith("indicador") 
+                and "callface" not in f]
 
 # Crie uma lista para exibir os arquivos .py
 script_listbox = tk.Listbox(window, bg="purple", fg="white", font=("Arial", 12))
